@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Incoices</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Amount</th>
+      <th>Company</th>
+      <th>Contragent</th>
+      <th>Currency</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @incoices.each do |incoice| %>
+      <tr>
+        <td><%= incoice.amount %></td>
+        <td><%= incoice.company %></td>
+        <td><%= incoice.contragent %></td>
+        <td><%= incoice.currency %></td>
+        <td><%= incoice.date %></td>
+        <td><%= link_to 'Show', incoice %></td>
+        <td><%= link_to 'Edit', edit_incoice_path(incoice) %></td>
+        <td><%= link_to 'Destroy', incoice, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Incoice', new_incoice_path %>

@@ -1,0 +1,2 @@
+class Incoice < ApplicationRecord
+end
