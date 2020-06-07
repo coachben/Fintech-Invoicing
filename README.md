@@ -1,7 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails Fintech Application is up and running.
+
+Nelify link:
+https://focused-hermann-85d9af.netlify.app/
+
 
 Things you may want to cover:
 
